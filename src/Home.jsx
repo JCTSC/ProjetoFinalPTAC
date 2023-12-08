@@ -19,11 +19,15 @@ export default function Home(){
       <div class="offcanvas-body">
         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="#"></a>
             
           </li>
           <li class="nav-item">
-           <Link to="/registrar">Registgeegrar</Link>
+            
+           <p><Link to="/registrar">Registrar</Link></p>
+           <p><Link to="/destaque">Destaque</Link></p>
+           <p><Link to="/detalhe">Detalhe</Link></p>
+           
           </li>
         </ul>
         <form class="d-flex mt-3" role="search">

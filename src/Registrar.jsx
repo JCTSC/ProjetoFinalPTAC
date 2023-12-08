@@ -13,7 +13,7 @@ export default function Registrar() {
   const[lista, setLista] = useState(listaLocalStorage || []);
   const[id, setId] = useState(listaLocalStorage[listaLocalStorage.length-1]?.id + 1 || 1);
 
-  useEffect(() => { localStorage.setItem("Lista", JSON.stringify(lista)) },[lista]);
+ useEffect(() => { localStorage.setItem("Lista", JSON.stringify(lista)) },[lista]);
 
   const salvar = async (e) => {
     e.preventDefault();
