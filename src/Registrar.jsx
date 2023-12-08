@@ -12,9 +12,11 @@ export default function ToDo() {
   const [lista, setLista] = useState([]);
   const [id, setId] = useState(1);
 
-  const salvar = (e) => {
+  const salvar = async (e) => {
     e.preventDefault();
-    setLista([...lista, {
+
+    await setLista([...lista, {
+
       atividade: atividade,
       artista: artista,
       link: link,
@@ -24,6 +26,7 @@ export default function ToDo() {
       canal: canal,
       id: id
     }]);
+
     setId(id + 1);
     setAtividade("");
     setCanal("");
@@ -32,23 +35,28 @@ export default function ToDo() {
     setData("");
     setArtista("");
     setTitulo("");
+
   };
   return (
     <div>
+
       <Link to="/">Home</Link>
         <h1>Lista de Atividades</h1>
 
         <form onSubmit={salvar}>
+
           <input type="text"
             onChange={(e) => {
               setAtividade(e.target.value)
             }} />
+
           <input placeholder="Artista" value={artista} onChange={(e) => { setArtista(e.target.value) }} />
           <input placeholder="Canal" value={canal} onChange={(e) => { setCanal(e.target.value) }} />
           <input placeholder="Link" value={link} onChange={(e) => { setLink(e.target.value) }} />
           <input placeholder="Letra" value={letra} onChange={(e) => { setLetra(e.target.value) }} />
           <input placeholder="Titulo" value={titulo} onChange={(e) => { setTitulo(e.target.value) }} />
           <input placeholder="Data" value={data} onChange={(e) => { setData(e.target.value) }} />
+          
           <button>Registrar</button>
         </form>
     </div>

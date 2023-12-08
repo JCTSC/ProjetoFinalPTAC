@@ -23,7 +23,7 @@ export default function Home(){
             
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+           <Link to="/src/Registrar.jsx">Registrar</Link>
           </li>
           <Link to="/src/Registrar.jsx"></Link>
         </ul>
