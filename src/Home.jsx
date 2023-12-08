@@ -36,7 +36,7 @@ export default function Home(){
       </div>
     </div>
   </div>
-  {videos.slice(-4).map((videos)=><Card video={videos}/>)}
+  {videos.map((videos)=><Card video={videos}/>)}
 </nav>
 
      );

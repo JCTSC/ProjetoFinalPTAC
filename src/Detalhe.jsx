@@ -22,7 +22,7 @@ export default function Detalhe(){
           </li>
           <li class="nav-item">
             <Link to="/">Home</Link>
-          </li>
+          </li> 
       </div>
     </div>
   </div>

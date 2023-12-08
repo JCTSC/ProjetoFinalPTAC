@@ -15,7 +15,7 @@ export default function Registrar() {
 
  useEffect(() => { localStorage.setItem("Lista", JSON.stringify(lista)) },[lista]);
 
- const navigate = useNavigate()
+ const navigate = useNavigate();
 
   const salvar = async (e) => {
     e.preventDefault();
