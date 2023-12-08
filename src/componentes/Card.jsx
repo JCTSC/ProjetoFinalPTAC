@@ -2,16 +2,10 @@ export default function Card({video}){
     return (
         <div>
 
-        
         <iframe 
-        width="853" 
-        height="480" 
-        src={"https://www.youtube.com/embed/"+ video.link.slice(17) }
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-         allowfullscreen></iframe>
-
-
+        width="100" 
+        height="100" 
+        src={"https://www.youtube.com/embed/"+ video.link.slice(17) }frameborder="0" ></iframe>
 
             <div class="card-body">
                 <p class="card-text">{video.artista}</p>
@@ -22,9 +16,6 @@ export default function Card({video}){
                 <p class="card-text">{video.data}</p>
                 
             </div>
-
-
-
 </div>
     );
 }
