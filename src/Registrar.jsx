@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-export default function ToDo() {
+export default function Registrar() {
   const [atividade, setAtividade] = useState("");
   const [artista, setArtista] = useState("");
   const [canal, setCanal] = useState("");
@@ -41,7 +41,7 @@ export default function ToDo() {
     <div>
 
       <Link to="/">Home</Link>
-        <h1>Lista de Atividades</h1>
+        <h1>Lista de registro</h1>
 
         <form onSubmit={salvar}>
 
@@ -56,7 +56,7 @@ export default function ToDo() {
           <input placeholder="Letra" value={letra} onChange={(e) => { setLetra(e.target.value) }} />
           <input placeholder="Titulo" value={titulo} onChange={(e) => { setTitulo(e.target.value) }} />
           <input placeholder="Data" value={data} onChange={(e) => { setData(e.target.value) }} />
-          
+
           <button>Registrar</button>
         </form>
     </div>
