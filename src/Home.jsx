@@ -36,7 +36,9 @@ export default function Home(){
       </div>
     </div>
   </div>
+  <div className="row row-cols-2">
   {videos.map((videos)=><Card video={videos}/>)}
+  </div>
 </nav>
 
      );
