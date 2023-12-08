@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import Card from "./componentes/Card";
 
 export default function Home(){
   const videos = JSON.parse(localStorage.getItem("Lista")) || [];
@@ -35,7 +36,7 @@ export default function Home(){
       </div>
     </div>
   </div>
-  {videos.slice(-4).map((video)=><Card video={video}/>)}
+  {videos.slice(-4).map((videos)=><Card video={videos}/>)}
 </nav>
 
      );

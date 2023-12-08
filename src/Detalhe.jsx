@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 
 
-export default function Card(){
+export default function Detalhe(){
     return (
         <div>
 

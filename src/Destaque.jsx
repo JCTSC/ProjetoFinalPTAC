@@ -3,7 +3,7 @@ import { useEffect } from "react";
 
 
 
-export default function Card(){
+export default function Destaque(){
   const videos = JSON.parse(localStorage.getItem("Lista")) || [];
     return (
         <div>

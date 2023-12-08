@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Registrar() {
     const listaLocalStorage = JSON.parse(localStorage.getItem("Lista"));
@@ -14,6 +14,8 @@ export default function Registrar() {
   const[id, setId] = useState(listaLocalStorage[listaLocalStorage.length-1]?.id + 1 || 1);
 
  useEffect(() => { localStorage.setItem("Lista", JSON.stringify(lista)) },[lista]);
+
+ const navigate = useNavigate()
 
   const salvar = async (e) => {
     e.preventDefault();
@@ -38,6 +40,7 @@ export default function Registrar() {
     setData("");
     setArtista("");
     setTitulo("");
+    navigate("/");
 
   };
   return (

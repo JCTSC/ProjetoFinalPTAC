@@ -1,4 +1,4 @@
-export default function Card(){
+export default function Card({video}){
     return (
         <div>
         <div>
