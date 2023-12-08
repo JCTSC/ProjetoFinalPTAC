@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function Registrar() {
+    const listaLocalStorage = JSON.parse(localStorage.getItem("Lista"));
   const [atividade, setAtividade] = useState("");
   const [artista, setArtista] = useState("");
   const [canal, setCanal] = useState("");
@@ -9,8 +10,10 @@ export default function Registrar() {
   const [letra, setLetra] = useState("");
   const [titulo, setTitulo] = useState("");
   const [data, setData] = useState("");
-  const [lista, setLista] = useState([]);
-  const [id, setId] = useState(1);
+  const[lista, setLista] = useState(listaLocalStorage || []);
+  const[id, setId] = useState(listaLocalStorage[listaLocalStorage.length-1]?.id + 1 || 1);
+
+  useEffect(() => { localStorage.setItem("Lista", JSON.stringify(lista)) },[lista]);
 
   const salvar = async (e) => {
     e.preventDefault();
