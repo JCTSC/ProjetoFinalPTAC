@@ -19,8 +19,6 @@ export default function Detalhe(){
       </div>
       <div class="offcanvas-body">
           <li class="nav-item">
-          </li>
-          <li class="nav-item">
             <Link to="/">Home</Link>
           </li> 
       </div>
