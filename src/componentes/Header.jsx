@@ -6,7 +6,9 @@ export default function Header(){
     return (
       <div class="navbar bg-body-tertiary fixed-top container-fluid">
       <a class="navbar-brand" href="#"><Link to="/">7MZ</Link></a>
+      <h2>SOUNDTRACK 7MZ´S</h2>
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        Opções
       <span class="navbar-toggler-icon"></span>
       </button>
       <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">

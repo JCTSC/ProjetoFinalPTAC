@@ -9,6 +9,7 @@ export default function Home(){
       return(
         
     <div>
+      
     <Header/>
     <div className="row row-cols-2">
     {videos.map((videos)=><Card video={videos}/>)}
