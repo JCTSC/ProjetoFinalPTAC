@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 export default function Card({video}){
     return (
-
         <div>
             <div class="card">
             <div class="ratio ratio-16x9">

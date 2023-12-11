@@ -29,7 +29,6 @@ export default function Detalhe(){
             <p class="card-text">{video[0].data}</p>
             <p class="card-text">{video[0].titulo}</p>
             <p class="card-text">{video[0].letra}</p>
-            
             </div>
             </div>
         </div>

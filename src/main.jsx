@@ -8,6 +8,7 @@ import Detalhe from './Detalhe'
 
 
 
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
      <BrowserRouter>

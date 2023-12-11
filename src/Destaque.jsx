@@ -6,17 +6,14 @@ import Footer from "./componentes/Footer";
 
 
 export default function Destaque(){
-  const videos = JSON.parse(localStorage.getItem("Lista")) || [];
-  const video = videos.slice(-4)
-    return (
+        const videos = JSON.parse(localStorage.getItem("Lista")) || [];
+        const video = videos.slice(-4)
+        return (
         <div>
-          <Header />
-
+        <Header />
         {video.map((video) => (<Card video={video}/>))}
-          
-          <br /><br /><br /><br />
-
-          <Footer />
-      </div>
-    );
+        <br /><br /><br /><br />
+        <Footer />
+        </div>
+        );
 }
