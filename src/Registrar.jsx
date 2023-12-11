@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import Header from "./componentes/Header";
+import Footer from "./componentes/Footer";
 
 export default function Registrar() {
     const listaLocalStorage = JSON.parse(localStorage.getItem("Lista"));
@@ -46,16 +48,10 @@ export default function Registrar() {
   return (
     <div>
 
-      <Link to="/">Home</Link>
+        <Header />      
         <h1>Lista de registro</h1>
 
-        <form onSubmit={salvar}>
-
-          <input type="text"
-            onChange={(e) => {
-              setAtividade(e.target.value)
-            }} />
-
+        <form onSubmit={salvar} className="text-center">
           <input placeholder="Artista" value={artista} onChange={(e) => { setArtista(e.target.value) }} />
           <input placeholder="Canal" value={canal} onChange={(e) => { setCanal(e.target.value) }} />
           <input placeholder="Link" value={link} onChange={(e) => { setLink(e.target.value) }} />
@@ -65,6 +61,12 @@ export default function Registrar() {
 
           <button>Registrar</button>
         </form>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <Footer />
     </div>
   );
 }
