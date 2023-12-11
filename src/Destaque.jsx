@@ -27,7 +27,7 @@ export default function Destaque(){
         <div>
 
    
-{videos.slice(-4).map((video)=><Card video={video}/>)}
-</div>
+    {videos.slice(-4).map((video)=><Card video={video}/>)}
+    </div>
     );
 }
