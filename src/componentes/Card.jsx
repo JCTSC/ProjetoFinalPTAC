@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Card({video}){
     return (
         <div>
@@ -7,11 +9,7 @@ export default function Card({video}){
             </div>
             <div class="card-body">
             <p class="card-text">{video.artista}</p>
-                <p class="card-text">{video.canal}</p>
-                <p class="card-text">{video.link}</p>
-                <p class="card-text">{video.letra}</p>
-                <p class="card-text">{video.titulo}</p>
-                <p class="card-text">{video.data}</p>
+                <Link to={"/detalhe/" + video.id}>detalhe</Link>
             </div>
             </div>
 </div>
